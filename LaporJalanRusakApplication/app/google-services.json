@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "724317512299",
+    "project_id": "lapor-jalan-rusak",
+    "storage_bucket": "lapor-jalan-rusak.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724317512299:android:bfd7057c3f46108a9ec72e",
+        "android_client_info": {
+          "package_name": "com.singgihrp.laporjalanrusakapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724317512299-60bnfdgiv0nenbg5f1red0gub0oqahcq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.singgihrp.laporjalanrusakapplication",
+            "certificate_hash": "0d77aafe4ace8d25d5b6a9fd180c3c23302a3ca2"
+          }
+        },
+        {
+          "client_id": "724317512299-gqnepcu5r35vorciqbk7c4e2ruvi2nlh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-ic56tjeILeROhqxUyZQzSfL9zZHydLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724317512299-gqnepcu5r35vorciqbk7c4e2ruvi2nlh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

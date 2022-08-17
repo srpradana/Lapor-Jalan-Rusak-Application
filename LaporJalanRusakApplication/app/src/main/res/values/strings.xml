@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Lapor Jalan Rusak Application</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slogan_awal">SELAMAT DATANG DI APLIKASI LAPOR JALAN RUSAK</string>
+    <string name="title_login">MASUK</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_lupa_password">Lupa Password?</string>
+    <string name="text_belum_akun">Belum punya akun?\u0020</string>
+    <string name="text_go_to_register">Daftar di sini</string>
+    <string name="title_regis">DAFTAR</string>
+    <string name="text_konfirmasi_password">Konfirmasi Password</string>
+    <string name="text_sudah_akun">Sudah punya akun?\u0020</string>
+    <string name="text_go_login">Kembali ke Halaman Masuk</string>
+    <string name="SLOGAN_REGIS">LAKUKAN PENDAFTARAN UNTUK DAPAT MENGGUNAKAN APLIKASI</string>
+    <string name="text_greetings_home">Halo,</string>
+    <string name="text_pengaturan_akun">Pengaturan Akun</string>
+    <string name="text_total_laporan">Laporan Terkirim</string>
+    <string name="text_note_verification">Halaman ini merupakan bantuan untuk mengirim kembali Email Verifikasi jika <b>belum mendapat Email Verifikasi</b> di kotak masuk email anda.</string>
+    <string name="tv_perintah_verif">Silahkan klik tombol dibawah untuk mengirim ulang link verifikasi email dan tunggu 60 detik selanjutnya untuk dapat menggunakannya kembali</string>
+    <string name="arrow_back">Kembali</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="title_laporan_terima">Daftar Laporan Diterima</string>
+    <string name="title_laporan">Daftar Laporan</string>
+    <string name="title_laporan_tolak">Daftar Laporan Ditolak</string>
+    <string name="refresh">Refresh</string>
+    <string name="laporan_diterima">Laporan Diterima</string>
+    <string name="laporan_ditolak">Laporan Ditolak</string>
+    <string name="lihat_laporan_terkirim">Lihat Laporan Terkirim</string>
+    <string name="lihat_laporan_diterima">Lihat Laporan Diterima</string>
+    <string name="lihat_laporan_ditolak">Lihat Laporan Ditolak</string>
+    <string name="syarat_membuat_laporan">Syarat membuat laporan:</string>
+    <string name="kelengkapan_profil">Kelengkapan Profil</string>
+    <string name="verifikasi_email">Verifikasi Email</string>
+    <string name="text_info_refresh">(Jika sudah verifikasi, silahkan tekan refresh)</string>
+    <string name="buat_laporan">Buat Laporan</string>
+    <string name="title_kirim_laporan">Kirim Laporan</string>
+    <string name="foto">foto</string>
+    <string name="pilih_gambar">Pilih Gambar</string>
+    <string name="nama_pengirim">Nama Pengirim</string>
+    <string name="email_pengirim">Email Pengirim</string>
+    <string name="nomor_telepon_pengirim">Nomor Telepon Pengirim</string>
+    <string name="lokasi_jalan_rusak">Lokasi Jalan Rusak</string>
+    <string name="tingat_kerusakan">Tingat Kerusakan</string>
+    <string name="kirim">kirim</string>
+    <string name="verifikasi_email_btn">Verifikasi Email</string>
+    <string name="kirim_link_verifikasi">Kirim Link Verifikasi</string>
+    <string name="akun_telah_terverifikasi">Akun telah terverifikasi</string>
+    <string name="title_pengaturan_akun">Pengaturan Akun</string>
+    <string name="logo">Logo</string>
+    <string name="ubah_akun">Ubah Akun</string>
+    <string name="menu_verifikasi_email">Verifikasi Email</string>
+    <string name="keluar">Keluar</string>
+    <string name="title_ubah_akun">Ubah Akun</string>
+    <string name="nama">Nama</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="simpan">SIMPAN</string>
+    <string name="title_detail_laporan">Detail Laporan</string>
+    <string name="laporan_jalan_rusak">LAPORAN JALAN RUSAK</string>
+    <string name="data_pengirim">Data Pengirim</string>
+    <string name="isi_laporan">Isi Laporan</string>
+    <string name="text_lokasi_jalan_rusak">Lokasi Jalan Rusak</string>
+    <string name="tingkat_kerusakan">Tingkat Kerusakan</string>
+    <string name="status_laporan">Status Laporan</string>
+    <string name="foto_bukti_jalan">Foto Bukti Jalan</string>
+    <string name="take_pict">Ambil Foto</string>
+    <string name="gallery">Galeri</string>
+    <string name="test">Test</string>
+    <string name="text_dialog">Harap Tunggu Sebentar</string>
+
+    <string-array name="tingkat_kerusakan">
+        <item>Ringan</item>
+        <item>Parah</item>
+    </string-array>
+
+    <string-array name="jenis_kelamin">
+        <item>Laki - laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>

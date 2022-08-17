@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">adminljr</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_dialog">Harap Tunggu Sebentar</string>
+    <string name="text_fab_terima">Proses</string>
+    <string name="text_fab_tolak">Tolak</string>
+    <string name="text_fab">Tanggapi</string>
+    <string name="arrow_back">Back Button</string>
+    <string name="title_detail">Detail Laporan</string>
+    <string name="title_laporan_detail">LAPORAN JALAN RUSAK</string>
+    <string name="data_pengirim">Data Pengirim</string>
+    <string name="isi_laporan">Isi Laporan</string>
+    <string name="lokasi_jalan_rusak">Lokasi Jalan Rusak</string>
+    <string name="tingkat_kerusakan">Tingkat Kerusakan</string>
+    <string name="color_kerusakan">Color Kerusakan</string>
+    <string name="status_laporan">Status Laporan</string>
+    <string name="foto_bukti_jalan">Foto Bukti Jalan</string>
+    <string name="logout">Logout</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="halo">Halo,</string>
+    <string name="laporan_diterima">Laporan Diterima</string>
+    <string name="laporan_diproses">Laporan Diproses</string>
+    <string name="lihat_laporan">Lihat Laporan</string>
+    <string name="lihat_laporan_diterima">Laporan Diterima</string>
+    <string name="laporan_diterima_logo">Laporan Diterima Logo</string>
+    <string name="lihat_laporan_diproses">Laporan diproses</string>
+    <string name="title_laporan">Daftar Laporan</string>
+    <string name="title_terima">Daftar Laporan Diterima</string>
+    <string name="title_login">Aplikasi Admin</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+</resources>

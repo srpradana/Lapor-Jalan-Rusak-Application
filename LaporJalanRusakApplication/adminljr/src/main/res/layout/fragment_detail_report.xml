@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/dark_white"
+    android:layout_height="match_parent"
+    tools:context=".view.main.DetailReportFragment">
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_accept"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_fab_terima"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:backgroundTint="@color/green_action"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="bottom|right"
+        tools:ignore="RtlHardcoded" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_reject"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_fab_tolak"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:backgroundTint="@color/red_action"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="bottom|right"
+        tools:ignore="RtlHardcoded" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_action"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_fab"
+        app:icon="@drawable/ic_response"
+        app:iconTint="@color/white"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:backgroundTint="@color/blue_primary_variant"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="bottom|right"
+        tools:ignore="RtlHardcoded" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutatas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/img_arrowback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_img_arrow"
+                    android:contentDescription="@string/arrow_back" />
+
+                <TextView
+                    android:id="@+id/tv_titleEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/title_detail"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/relative_layout"
+                app:strokeColor="@color/blue_primary_variant"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center_horizontal"
+                        android:text="@string/title_laporan_detail"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center_horizontal"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_title"
+                        tools:text="Dikirim pada: 08/08/2008" />
+
+                    <View
+                        android:id="@+id/line_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/light_grey"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_date" />
+
+                    <TextView
+                        android:id="@+id/tv_titleBioData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/data_pengirim"
+                        android:textColor="@color/blue_primary_variant"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/line_one" />
+
+                    <TextView
+                        android:id="@+id/tv_nama"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:drawableStartCompat="@drawable/ic_person"
+                        app:drawableTint="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/tv_titleBioData"
+                        app:layout_constraintTop_toBottomOf="@id/tv_titleBioData"
+                        tools:text="Dana" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:drawableStartCompat="@drawable/ic_email"
+                        app:drawableTint="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/tv_titleBioData"
+                        app:layout_constraintTop_toBottomOf="@id/tv_nama"
+                        tools:text="danapradana11@gmail.com" />
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:drawableStartCompat="@drawable/ic_phone"
+                        app:drawableTint="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/tv_titleBioData"
+                        app:layout_constraintTop_toBottomOf="@id/tv_email"
+                        tools:text="+6281215684596" />
+
+                    <TextView
+                        android:id="@+id/tv_titleIsiLaporan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/isi_laporan"
+                        android:textColor="@color/blue_primary_variant"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_phone" />
+
+                    <TextView
+                        android:id="@+id/tv_titleLokasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/lokasi_jalan_rusak"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/tv_titleIsiLaporan"
+                        app:layout_constraintTop_toBottomOf="@id/tv_titleIsiLaporan" />
+
+                    <TextView
+                        android:id="@+id/tv_lokasi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/tv_titleLokasi"
+                        app:layout_constraintTop_toBottomOf="@id/tv_titleLokasi"
+                        tools:maxLines="3"
+                        tools:text="@tools:sample/lorem/random" />
+
+                    <TextView
+                        android:id="@+id/tv_titleTingkatRusak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/tingkat_kerusakan"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_lokasi" />
+
+                    <ImageView
+                        android:id="@+id/img_tingkatrusak"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_check_rusak_ringan"
+                        app:layout_constraintStart_toStartOf="@id/tv_titleTingkatRusak"
+                        app:layout_constraintTop_toBottomOf="@id/tv_titleTingkatRusak"
+                        android:contentDescription="@string/color_kerusakan" />
+
+                    <TextView
+                        android:id="@+id/tv_tingkatRusak"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@id/img_tingkatrusak"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/img_tingkatrusak"
+                        app:layout_constraintTop_toTopOf="@id/img_tingkatrusak"
+                        tools:text="Ringan" />
+
+                    <TextView
+                        android:id="@+id/tv_titleStatusLaporan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/status_laporan"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/img_tingkatrusak" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/tv_titleStatusLaporan"
+                        app:layout_constraintTop_toBottomOf="@id/tv_titleStatusLaporan"
+                        tools:text="Diterima (11/11/2011 03:43 WIB)" />
+
+                    <TextView
+                        android:id="@+id/tv_titleFoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/foto_bukti_jalan"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_status" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/img_foto"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        app:strokeColor="@color/light_grey"
+                        app:strokeWidth="1dp"
+                        app:layout_constraintStart_toStartOf="@id/tv_titleFoto"
+                        app:layout_constraintTop_toBottomOf="@id/tv_titleFoto"
+                        tools:src="@tools:sample/avatars" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
