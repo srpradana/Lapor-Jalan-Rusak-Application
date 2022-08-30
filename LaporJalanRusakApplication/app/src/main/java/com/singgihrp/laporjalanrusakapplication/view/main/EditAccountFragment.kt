@@ -145,7 +145,9 @@ class EditAccountFragment : Fragment(), View.OnClickListener {
                     nohp = "+62"+binding.etfieldUpdateNohp.text.toString().trim(),
                     name = binding.etfieldUpdateName.text.toString().trim()
                 )
-                updateUser(user)
+                if(validation()){
+                    updateUser(user)
+                }
             }
             R.id.et_updateDate -> {
                 DatePickerDialog(requireActivity(),
@@ -171,6 +173,52 @@ class EditAccountFragment : Fragment(), View.OnClickListener {
                 hideKeyboard()
             }
         }
+    }
+
+    private fun validation(): Boolean{
+        var validasi = true
+        val namabox = binding.etUpdateName
+        val namafield = binding.etfieldUpdateName.text.toString()
+        val jenisKelaminBox = binding.etUpdateJenisKelamin
+        val jenisKelamin = binding.tvUpdateJenisKelamin.text.toString()
+        val notelp = binding.etUpdateNoHp
+        val notelpField = binding.etfieldUpdateNohp.text.toString()
+        val date = binding.etUpdateDate
+        val dateField = binding.etfieldUpdateDate.text.toString()
+        if(namafield.isEmpty()){
+            validasi = false
+            namabox.error = "Nama Wajib diisi"
+            namabox.isErrorEnabled = true
+            return validasi
+        }else{
+            namabox.error = null
+            namabox.isErrorEnabled = false
+        }
+        if(jenisKelamin.isEmpty()){
+            validasi = false
+            jenisKelaminBox.error = "Pilih salah satu"
+            return validasi
+        }else{
+            jenisKelaminBox.error = null
+            jenisKelaminBox.isErrorEnabled = false
+        }
+        if(notelpField.length < 10){
+            validasi = false
+            notelp.error = "Nomor Telepon Minimal 10"
+            return validasi
+        }else{
+            notelp.error = null
+            notelp.isErrorEnabled = false
+        }
+        if(dateField.isEmpty()){
+            validasi = false
+            date.error = "Pilih Tanggal Lahir"
+            return validasi
+        }else{
+            date.error = null
+            date.isErrorEnabled = false
+        }
+        return validasi
     }
 
     override fun onDestroy() {
